@@ -15,8 +15,8 @@ const TEMP_IMAGE_DIR = './temp_images';
 
 // LINE設定
 const lineConfig = {
-  channelAccessToken: 'vSJE+Tf7g8dxaHT5tdk6VrF5Us8ATTigmgWboaCT6tNegT8gyclb5yZV7lIWDX2t8CFpRixFSCbS0Dtb2SJvnt6XfcTPTr6AaJEcJhvuVs2B2fB+Uzbzh1b1IXU29zXrwgXPqzkal+MSjU7Bvamd3AdB04t89/1O/w1cDnyilFU=',
-  channelSecret: 'bdf28d831f7b84b77282ff8669982394'
+  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
+  channelSecret: process.env.CHANNEL_SECRET
 };
 
 // LINEクライアント初期化
