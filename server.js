@@ -36,7 +36,12 @@ console.log('DISCORD_WEBHOOK_URL 存在:', !!process.env.DISCORD_WEBHOOK_URL);
 app.post('/webhook', line.middleware(lineConfig), async (req, res) => {
   try {
     const events = req.body.events;
-    await Promise.all(events.map(handleEvent));
+
+    // 順番に1つずつ処理（Promise.allを使わない）
+    for (const event of events) {
+      await handleEvent(event);
+    }
+
     res.status(200).end();
   } catch (err) {
     console.error('エラーが発生しました:', err);
