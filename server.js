@@ -15,8 +15,8 @@ const TEMP_IMAGE_DIR = './temp_images';
 
 // LINE設定
 const lineConfig = {
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-  channelSecret: process.env.CHANNEL_SECRET
+  channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN,
+  channelSecret: process.env.LINE_CHANNEL_SECRET
 };
 
 // LINEクライアント初期化
