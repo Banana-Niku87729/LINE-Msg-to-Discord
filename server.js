@@ -10,7 +10,7 @@ const FormData = require('form-data');
 
 // 環境変数の設定
 const PORT = process.env.PORT || 3000;
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1360974781993980105/3yq-jOqNSdJFPk22zqPBQCDiU-sY_TRKLE2gXG8e7WMSvpEFvebZcOGAAgmfsaZijLnd';
+const DISCORD_WEBHOOK_URL = 'ここ変えて';
 const TEMP_IMAGE_DIR = './temp_images';
 
 // LINE設定
